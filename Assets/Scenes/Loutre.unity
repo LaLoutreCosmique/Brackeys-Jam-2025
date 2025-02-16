@@ -755,70 +755,83 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2127854538
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2127854540}
-  - component: {fileID: 2127854539}
-  m_Layer: 0
-  m_Name: Achievements Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2127854539
+--- !u!114 &2127854539 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3260884527816130618, guid: 2f6ba9b5de5c96c428f10c4278132d7d, type: 3}
+  m_PrefabInstance: {fileID: 4596722216393652608}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2127854538}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e02c12e5de08b2a408d62a7f785d7841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Database: {fileID: 11400000, guid: dac86c8b267d3a7429b77c37b2b1a446, type: 2}
-  onComplete:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1331736605}
-        m_TargetAssemblyTypeName: UI.AchievementPopup, Assembly-CSharp
-        m_MethodName: Activate
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  TESTDATA:
-  - {fileID: 11400000, guid: 43664edf7f77cf84183e64078d3abe5c, type: 2}
-  - {fileID: 11400000, guid: 8ae3c367f0d46534ea5a5934a6f48b0b, type: 2}
-  - {fileID: 11400000, guid: dba6264a018e0d642959bddce17fe241, type: 2}
---- !u!4 &2127854540
+--- !u!4 &2127854540 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 2788913668903181659, guid: 2f6ba9b5de5c96c428f10c4278132d7d, type: 3}
+  m_PrefabInstance: {fileID: 4596722216393652608}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2127854538}
+--- !u!1001 &4596722216393652608
+PrefabInstance:
+  m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 832040880}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 832040880}
+    m_Modifications:
+    - target: {fileID: 2148803490638694294, guid: 2f6ba9b5de5c96c428f10c4278132d7d, type: 3}
+      propertyPath: m_Name
+      value: Achievements Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788913668903181659, guid: 2f6ba9b5de5c96c428f10c4278132d7d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788913668903181659, guid: 2f6ba9b5de5c96c428f10c4278132d7d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788913668903181659, guid: 2f6ba9b5de5c96c428f10c4278132d7d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788913668903181659, guid: 2f6ba9b5de5c96c428f10c4278132d7d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788913668903181659, guid: 2f6ba9b5de5c96c428f10c4278132d7d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788913668903181659, guid: 2f6ba9b5de5c96c428f10c4278132d7d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788913668903181659, guid: 2f6ba9b5de5c96c428f10c4278132d7d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788913668903181659, guid: 2f6ba9b5de5c96c428f10c4278132d7d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788913668903181659, guid: 2f6ba9b5de5c96c428f10c4278132d7d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788913668903181659, guid: 2f6ba9b5de5c96c428f10c4278132d7d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3260884527816130618, guid: 2f6ba9b5de5c96c428f10c4278132d7d, type: 3}
+      propertyPath: onComplete.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1331736605}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2f6ba9b5de5c96c428f10c4278132d7d, type: 3}
 --- !u!1001 &8022145427102907634
 PrefabInstance:
   m_ObjectHideFlags: 0
