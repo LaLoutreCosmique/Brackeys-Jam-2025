@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Achievements
@@ -6,5 +7,13 @@ namespace Achievements
     public class AchievementDatabase : ScriptableObject
     {
         public AchievementData[] data;
+
+        public void ResetProgress()
+        {
+            foreach (var achievement in data)
+            {
+                achievement.ResetCompletion();
+            }
+        }
     }
 }

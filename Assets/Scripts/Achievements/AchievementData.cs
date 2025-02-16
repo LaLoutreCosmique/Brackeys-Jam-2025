@@ -14,7 +14,7 @@ namespace Achievements
         public Sprite completedImage;
         public Sprite uncompletedImage;
 
-        bool m_Completed;
+        [SerializeField] bool m_Completed;
         public bool Completed => m_Completed;
 
         public void Complete()
@@ -28,6 +28,11 @@ namespace Achievements
         public void SetCompletedCallback(CompletedDelegate callback)
         {
             m_CompletedCallback = callback;
+        }
+
+        public void ResetCompletion()
+        {
+            m_Completed = false;
         }
     }
 }

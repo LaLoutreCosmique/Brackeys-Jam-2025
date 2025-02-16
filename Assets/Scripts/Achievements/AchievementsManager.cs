@@ -9,8 +9,11 @@ namespace Achievements
         
         public UnityEvent<AchievementData> onComplete;
 
+#if UNITY_EDITOR
         // TEST only
-        [SerializeField] AchievementData TESTDATA;
+        [SerializeField] AchievementData[] TESTDATA;
+        int index;
+#endif
 
         void Start()
         {
@@ -24,11 +27,14 @@ namespace Achievements
         {
             onComplete.Invoke(achievement);
         }
-        
-        // TEST only
+
+#if UNITY_EDITOR
+        // TEST only - Called by button
         public void CompleteTest()
         {
-            TESTDATA.Complete();
+            TESTDATA[index]?.Complete();
+            index++;
         }
+#endif
     }
 }
