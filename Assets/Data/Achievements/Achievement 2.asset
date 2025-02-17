@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fefcb29f69c6fe41ae3d3a627aec9fb, type: 3}
+  m_Name: Achievement 2
+  m_EditorClassIdentifier: 
+  title:
+    m_TableReference:
+      m_TableCollectionName: GUID:a575099e6b42ccd4182bc66f67a2ff8a
+    m_TableEntryReference:
+      m_KeyId: 1184138825728
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  description:
+    m_TableReference:
+      m_TableCollectionName: GUID:a575099e6b42ccd4182bc66f67a2ff8a
+    m_TableEntryReference:
+      m_KeyId: 3204367290368
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  completedImage: {fileID: 0}
+  uncompletedImage: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
