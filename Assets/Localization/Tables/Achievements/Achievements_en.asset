@@ -30,6 +30,131 @@ MonoBehaviour:
     m_Localized: Big red button
     m_Metadata:
       m_Items: []
+  - m_Id: 348210863562752
+    m_Localized: You gave barley to the sumerians
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348354304565248
+    m_Localized: Sheh
+    m_Metadata:
+      m_Items: []
+  - m_Id: 348744282562560
+    m_Localized: Declare war on North Korea
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349343757656064
+    m_Localized: Kim's fury
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349573337079808
+    m_Localized: You have provoked Earth's destruction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 349935028690944
+    m_Localized: Zbloubiboulou
+    m_Metadata:
+      m_Items: []
+  - m_Id: 350013248266240
+    m_Localized: You bombed New York City
+    m_Metadata:
+      m_Items: []
+  - m_Id: 350190486970368
+    m_Localized: This coffee is tight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 350348306046976
+    m_Localized: You invaded Poland
+    m_Metadata:
+      m_Items: []
+  - m_Id: 351027259006976
+    m_Localized: Roman Salute
+    m_Metadata:
+      m_Items: []
+  - m_Id: 351426791628800
+    m_Localized: You provoked Larry's rage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 351710980890624
+    m_Localized: Larry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 351778152669184
+    m_Localized: There is an impostor among us
+    m_Metadata:
+      m_Items: []
+  - m_Id: 352009741164544
+    m_Localized: Sus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 352149428264960
+    m_Localized: Subway Surfers has helped you work
+    m_Metadata:
+      m_Items: []
+  - m_Id: 352824241446912
+    m_Localized: ADHD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 352911663325184
+    m_Localized: You've leaked all the feature of the upcoming game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 353253440380928
+    m_Localized: "Pok\xE9leak"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 353308159270912
+    m_Localized: You discovered your true self
+    m_Metadata:
+      m_Items: []
+  - m_Id: 353586640084992
+    m_Localized: I, Robot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 353651811180544
+    m_Localized: You got out of the game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 353920515072000
+    m_Localized: The Fourth Wall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 354037041225728
+    m_Localized: You cheated
+    m_Metadata:
+      m_Items: []
+  - m_Id: 354171464474624
+    m_Localized: Cheater
+    m_Metadata:
+      m_Items: []
+  - m_Id: 354279509745664
+    m_Localized: You stole the TARDIS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 354576386777088
+    m_Localized: The Doctor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 354668715991040
+    m_Localized: You've had a heart attack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 354841005416448
+    m_Localized: Kira
+    m_Metadata:
+      m_Items: []
+  - m_Id: 354914527371264
+    m_Localized: You bequeathed your fortune to "Brady Pitter"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 355387867160576
+    m_Localized: Anne, it's fake
+    m_Metadata:
+      m_Items: []
+  - m_Id: 355508281434112
+    m_Localized: You discovered that The Queen of England, Mickael Jackson and Elvis
+      Presley lives on an island
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
