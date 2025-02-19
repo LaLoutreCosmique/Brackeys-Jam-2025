@@ -30,6 +30,9 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
+  completedImage: {fileID: 0}
+  uncompletedImage: {fileID: 0}
+  m_Completed: 1
   references:
     version: 2
     RefIds: []

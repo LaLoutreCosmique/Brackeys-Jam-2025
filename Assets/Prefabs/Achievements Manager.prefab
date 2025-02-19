@@ -48,7 +48,7 @@ MonoBehaviour:
   onComplete:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 416923583625976444, guid: 3ea9aac4d4b1236418afdd0bdf9b8bac, type: 3}
         m_TargetAssemblyTypeName: UI.AchievementPopup, Assembly-CSharp
         m_MethodName: Activate
         m_Mode: 0
