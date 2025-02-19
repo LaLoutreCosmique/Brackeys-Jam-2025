@@ -30,7 +30,7 @@ namespace Localization
 
         void UpdateDesc(string txt)
         {
-            descHandler.text = txt;
+            //descHandler.text = txt;
             // ou
             descHandler.text = description.GetLocalizedString();
         }

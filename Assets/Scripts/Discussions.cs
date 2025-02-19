@@ -1,21 +1,22 @@
+using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Discussions : MonoBehaviour
 {
     
     [SerializeField] private TextMeshProUGUI discussionText;
-    [SerializeField] private TextMeshProUGUI answerText1;
-    [SerializeField] private TextMeshProUGUI answerText2;
-    [SerializeField] private TextMeshProUGUI answerText3;
-    
+    [SerializeField] private Button answerText1;
+    [SerializeField] private Button answerText2;
+    //[SerializeField] private TextMeshProUGUI answerText3;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        discussionText.gameObject.SetActive(false);
-        answerText1.gameObject.SetActive(false);
-        answerText2.gameObject.SetActive(false);
-        answerText3.gameObject.SetActive(false);
+        //discussionText.gameObject.SetActive(false);
+        //answerText1.gameObject.SetActive(false);
+        //answerText2.gameObject.SetActive(false);
+        //answerText3.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -34,6 +35,23 @@ public class Discussions : MonoBehaviour
     void DiscussionWith3Answers()
     {
         DiscussionWith2Answers();
-        answerText3.gameObject.SetActive(true);
+        //answerText3.gameObject.SetActive(true);
+    }
+
+    public void ShowDiscussion(DialoguePart dialoguePart)
+    {
+        discussionText.text = dialoguePart.discussionText.GetLocalizedString();
+        answerText1.GetComponentInChildren<TextMeshProUGUI>().text = dialoguePart.answers[0].answerText.GetLocalizedString();
+        answerText2.GetComponentInChildren<TextMeshProUGUI>().text = dialoguePart.answers[1].answerText.GetLocalizedString();
+        DiscussionWith2Answers();
+        
+    }
+    
+
+    public void StopDiscussion()
+    {
+        discussionText.gameObject.SetActive(false);
+        answerText1.gameObject.SetActive(false);
+        answerText2.gameObject.SetActive(false);
     }
 }
