@@ -22,7 +22,7 @@ public class ClickableObject : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if (gameEvent.Achievement.Completed) return;
+        if (gameEvent != null && gameEvent.Achievement.Completed) return;
         
         m_MouseInside = true;
 

@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 namespace GameEvents
 {
-    public class PopupEvent : GameEvent, IPointerClickHandler
+    public class PopupEvent : GameEvent
     {
         float m_Offset = 10f;
 
@@ -21,17 +21,11 @@ namespace GameEvents
             m_IsHiding = false;
         }
 
-        public void OnPointerClick(PointerEventData eventData)
-        {
-            Achievement.Complete();
-        }
-
         public bool Hide()
         {
             if (m_IsHiding) return false;
 
             m_IsHiding = true;
-            print("HA");
             GO.transform.DOMoveY(-m_Offset, 0.2f).OnComplete(() =>
             {
                 Destroy(GO);
@@ -40,5 +34,7 @@ namespace GameEvents
 
             return true;
         }
+
+        
     }
 }
