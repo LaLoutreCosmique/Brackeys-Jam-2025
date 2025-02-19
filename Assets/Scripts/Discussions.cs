@@ -1,9 +1,10 @@
 using System;
+using GameEvents;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Discussions : MonoBehaviour
+public class Discussions : GameEvent
 {
     
     [SerializeField] private TextMeshProUGUI discussionText;
@@ -40,11 +41,21 @@ public class Discussions : MonoBehaviour
 
     public void ShowDiscussion(DialoguePart dialoguePart)
     {
+        Debug.Log(dialoguePart.answers.Length);
+        if (dialoguePart.answers.Length == 1)
+        {
+            Debug.Log("a");
+            if (dialoguePart.answers[0].achievements != null)
+            {
+                dialoguePart.answers[0].achievements.Complete();
+            }
+            StopDiscussion();
+            return;
+        }
         discussionText.text = dialoguePart.discussionText.GetLocalizedString();
         answerText1.GetComponentInChildren<TextMeshProUGUI>().text = dialoguePart.answers[0].answerText.GetLocalizedString();
         answerText2.GetComponentInChildren<TextMeshProUGUI>().text = dialoguePart.answers[1].answerText.GetLocalizedString();
         DiscussionWith2Answers();
-        
     }
     
 
@@ -53,5 +64,10 @@ public class Discussions : MonoBehaviour
         discussionText.gameObject.SetActive(false);
         answerText1.gameObject.SetActive(false);
         answerText2.gameObject.SetActive(false);
+    }
+
+    public override void StartEvent()
+    {
+        
     }
 }
