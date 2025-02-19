@@ -30,8 +30,8 @@ namespace UI
             }
 
             m_IsDisplayed = true;
-            title.text = data.title.GetLocalizedString();
-            description.text = data.description.GetLocalizedString();
+            title.text = data.Title.GetLocalizedString();
+            description.text = data.Description.GetLocalizedString();
             m_Rect.DOAnchorPosX(-m_Rect.sizeDelta.x/2, 1).OnComplete(() => StartCoroutine(Hide()));
         }
 

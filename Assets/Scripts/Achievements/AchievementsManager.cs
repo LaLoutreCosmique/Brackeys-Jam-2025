@@ -9,6 +9,8 @@ namespace Achievements
         
         public UnityEvent<AchievementData> onComplete;
 
+        public AchievementDatabase Database => m_Database;
+
 #if UNITY_EDITOR
         // TEST only
         [SerializeField] AchievementData[] TESTDATA;

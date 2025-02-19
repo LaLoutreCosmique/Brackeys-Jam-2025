@@ -9,12 +9,17 @@ namespace Achievements
         public delegate void CompletedDelegate(AchievementData achievement);
         CompletedDelegate m_CompletedCallback;
         
-        public LocalizedString title;
-        public LocalizedString description;
-        public Sprite completedImage;
-        public Sprite uncompletedImage;
-
+        [SerializeField] LocalizedString title;
+        [SerializeField] LocalizedString description;
+        [SerializeField] Sprite completedImage;
+        [SerializeField] Sprite uncompletedImage;
+        
         [SerializeField] bool m_Completed;
+        
+        public LocalizedString Title => title;
+        public LocalizedString Description => description;
+        public Sprite CompletedImage => completedImage;
+        public Sprite UncompletedImage => uncompletedImage;
         public bool Completed => m_Completed;
 
         public void Complete()
