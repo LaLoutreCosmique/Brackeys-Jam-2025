@@ -1,5 +1,6 @@
 using GameEvents;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
 
@@ -9,6 +10,7 @@ public class ClickableObject : MonoBehaviour, IPointerEnterHandler, IPointerExit
     [SerializeField] Sprite initialSprite;
     [SerializeField] Sprite hoveredSprite;
     [SerializeField] GameEvent gameEvent;
+    [SerializeField] UnityEvent onClick;
 
     SpriteRenderer m_Renderer;
     bool m_MouseInside;
@@ -40,7 +42,9 @@ public class ClickableObject : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (m_MouseInside)
-            gameEvent.StartEvent();
+        if (!m_MouseInside) return;
+        
+        if (gameEvent != null) gameEvent.StartEvent();
+        onClick?.Invoke();
     }
 }
