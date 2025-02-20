@@ -32,7 +32,7 @@ MonoBehaviour:
     m_LocalVariables: []
   completedImage: {fileID: 0}
   uncompletedImage: {fileID: 0}
-  m_Completed: 1
+  m_Completed: 0
   references:
     version: 2
     RefIds: []

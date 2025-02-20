@@ -21,7 +21,18 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  answers: []
+  answers:
+  - answerText:
+      m_TableReference:
+        m_TableCollectionName: 
+      m_TableEntryReference:
+        m_KeyId: 0
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    text: {fileID: 0}
+    achievements: {fileID: 11400000, guid: 43664edf7f77cf84183e64078d3abe5c, type: 2}
   references:
     version: 2
     RefIds: []

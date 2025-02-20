@@ -41,21 +41,27 @@ public class Discussions : GameEvent
 
     public void ShowDiscussion(DialoguePart dialoguePart)
     {
-        Debug.Log(dialoguePart.answers.Length);
-        if (dialoguePart.answers.Length == 1)
-        {
-            Debug.Log("a");
-            if (dialoguePart.answers[0].achievements != null)
-            {
-                dialoguePart.answers[0].achievements.Complete();
-            }
-            StopDiscussion();
-            return;
-        }
+        answerText1.onClick.RemoveAllListeners();
+        answerText2.onClick.RemoveAllListeners();
         discussionText.text = dialoguePart.discussionText.GetLocalizedString();
         answerText1.GetComponentInChildren<TextMeshProUGUI>().text = dialoguePart.answers[0].answerText.GetLocalizedString();
         answerText2.GetComponentInChildren<TextMeshProUGUI>().text = dialoguePart.answers[1].answerText.GetLocalizedString();
         DiscussionWith2Answers();
+        if (dialoguePart.answers[0].achievements != null)
+            answerText1.onClick.AddListener(delegate { dialoguePart.answers[0].achievements.Complete(); });
+
+        if (dialoguePart.answers[1].achievements != null)
+            answerText2.onClick.AddListener(delegate { dialoguePart.answers[1].achievements.Complete(); });
+        if (dialoguePart.answers[0].text != null && dialoguePart.answers[1].text != null)
+        {
+            answerText1.onClick.AddListener(delegate { ShowDiscussion(dialoguePart.answers[0].text); });
+            answerText2.onClick.AddListener(delegate { ShowDiscussion(dialoguePart.answers[1].text); });
+        }
+        else
+        {
+            answerText1.onClick.AddListener(StopDiscussion);
+            answerText2.onClick.AddListener(StopDiscussion);
+        }
     }
     
 
