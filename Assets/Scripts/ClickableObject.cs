@@ -10,10 +10,11 @@ public class ClickableObject : MonoBehaviour, IPointerEnterHandler, IPointerExit
     [SerializeField] Sprite initialSprite;
     [SerializeField] Sprite hoveredSprite;
     [SerializeField] GameEvent gameEvent;
-    [SerializeField] UnityEvent onClick;
+    
+    public UnityEvent<ClickableObject> onClick;
 
     SpriteRenderer m_Renderer;
-    bool m_MouseInside;
+    bool m_MouseInside, active;
 
     void Awake()
     {
@@ -32,7 +33,7 @@ public class ClickableObject : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        if (!m_MouseInside) return;
+        if (!m_MouseInside || active) return;
         
         m_MouseInside = false;
 
@@ -42,9 +43,21 @@ public class ClickableObject : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (!m_MouseInside) return;
+        if (!m_MouseInside || active) return;
         
         if (gameEvent != null) gameEvent.StartEvent();
-        onClick?.Invoke();
+        onClick?.Invoke(this);
+    }
+
+    public void Activate()
+    {
+        m_Renderer.sprite = hoveredSprite;
+        active = true;
+    }
+
+    public void Deactivate()
+    {
+        m_Renderer.sprite = initialSprite;
+        active = false;
     }
 }
